@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .masonry {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      grid-auto-rows: minmax(100px, auto);
+    }
+    
+    .masonry-item {
+      break-inside: avoid;
+    }
+  }
+  
